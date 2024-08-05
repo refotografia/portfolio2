@@ -130,7 +130,8 @@ function changeImage() {
 }
 
 function gotoImage(new_index) {
-    imageContainer.style.backgroundImage = `url(${images[new_index]})`;
+    currentIndex = new_index;
+    imageContainer.style.backgroundImage = `url(${images[currentIndex]})`;
 }
 
 aridezButton.addEventListener('click', () => gotoImage(0));
