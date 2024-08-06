@@ -11,6 +11,7 @@ const unicosButton = document.getElementById('unicos');
 const aquiButton = document.getElementById('aqui');
 const pluracidadesButton = document.getElementById('pluracidades');
 const pluralButton = document.getElementById('plural');
+const guiButton = document.getElementById('gui');
 
 const images = [
     'img/folio1.jpg',
@@ -117,17 +118,21 @@ const images = [
     'img/folio102.jpg',
     'img/folio103.jpg',
     'img/folio104.jpg',
-    'img/folio105.jpg'
+    'img/folio105.jpg',
+    'img/folio106.jpg'
 ];
 
 let currentIndex = 0;
+const changeText = document.getElementById('txt');
 
 function changeImage() {
+    changeText.textContent = "";
     currentIndex = (currentIndex + 1) % images.length;
     imageContainer.style.backgroundImage = `url(${images[currentIndex]})`;
 }
 
 function gotoImage(new_index) {
+    changeText.textContent = "";
     currentIndex = new_index;
     imageContainer.style.backgroundImage = `url(${images[currentIndex]})`;
 }
@@ -143,6 +148,7 @@ unicosButton.addEventListener('click', () => gotoImage(74));
 aquiButton.addEventListener('click', () => gotoImage(83));
 pluracidadesButton.addEventListener('click', () => gotoImage(92));
 pluralButton.addEventListener('click', () => gotoImage(100));
+guiButton.addEventListener('click', () => gotoImage(105))
 nextButton.addEventListener('click', changeImage);
 
 // Initial image
