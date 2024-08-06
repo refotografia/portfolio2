@@ -117,9 +117,7 @@ const images = [
     'img/folio102.jpg',
     'img/folio103.jpg',
     'img/folio104.jpg',
-    'img/folio105.jpg',
-    'img/folio106.jpg',
-    'img/folio107.jpg'
+    'img/folio105.jpg'
 ];
 
 let currentIndex = 0;
@@ -144,7 +142,7 @@ maresiasButton.addEventListener('click', () => gotoImage(69));
 unicosButton.addEventListener('click', () => gotoImage(74));
 aquiButton.addEventListener('click', () => gotoImage(83));
 pluracidadesButton.addEventListener('click', () => gotoImage(92));
-pluralButton.addEventListener('click', () => gotoImage(101));
+pluralButton.addEventListener('click', () => gotoImage(100));
 nextButton.addEventListener('click', changeImage);
 
 // Initial image
